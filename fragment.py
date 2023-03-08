@@ -112,7 +112,7 @@ class Fragment:
         
         with open(filename,'w') as orca_file:
             orca_file.write(f'! {self.job}\n')
-            orca_file.write(f'%PAL NPROCS {self.procs} END')
+            orca_file.write(f'%PAL NPROCS {self.procs} END\n')
             
 
             # Add geom constraints for the fragment 
